@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000;
+}
+
+header {
+  height: 50px;
+  background-color: #FF9A4B;
+}
+
+.section {
+  margin: 50px auto;
+  width: 990px;
+}
+
+.grid {
+  display: flex;
+  list-style: none;
+}
+
+.grid-item {
+  margin: 15px;
+  background-color: #EEE;
+  position: relative;
+  width: 300px;
+}
+
+.card-label {
+  background-color: #FF9A4B;
+  position: absolute;
+  color: #FFF;
+}
+
+.card-image {
+  margin: 10px 10px 0;
+  height: 150px;
+  width: 280px;
+  object-fit: cover;
+  object-position: bottom;
+  vertical-align: top; /*追記しました*/
+}
+
+.card-info {
+  margin-top: 15px; 
+}
+
+.card-headline {
+  margin: 15px 10px 5px;
+}
+
+.card-description {
+  margin: 0 10px 5px;
+}
+
+footer {
+  height: 50px;
+  background-color: #AAA;
+}
+
+@media screen and (max-width: 768px) {
+
+  .section {
+    margin: 50px auto;
+    width: 90%;
+  }
+
+  .grid {
+    display: block;
+  }
+
+  .grid-item {
+    margin: 20px;
+    width: 90%;
+  }
+
+  .card-image {
+    width: 95%;
+  }
+
+}
